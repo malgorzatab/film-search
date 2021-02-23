@@ -1,11 +1,13 @@
+import FilmSearch from './views/FilmSearch/FilmSearch';
+
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       <div>Film search app</div>
-      </header>
+      <nav className={"navbar"}><h1>Film Search App</h1></nav>
+      <FilmSearch />
     </div>
   );
 }
