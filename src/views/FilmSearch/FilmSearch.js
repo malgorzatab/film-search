@@ -26,13 +26,8 @@ const FilmSearch = () => {
 
     return (
         <div className={"content"}>
-            <SearchField
-                handelSearch={handelSearch}
-            />
-            {
-                films.length > 0 ? <Films films={films} /> : <div className={"error"}>{error}</div>
-            }
-
+            <SearchField handelSearch={handelSearch} />
+            {films.length > 0 ? <Films films={films} /> : <div className={"error"}>{error}</div>}
         </div>
     );
 }
