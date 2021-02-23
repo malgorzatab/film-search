@@ -10,7 +10,7 @@ const FilmSearch = () => {
 
 
     const handelSearch = (search) =>
-        fetch(`http://www.omdbapi.com/?apikey=1d60c136&s=${search}`)
+        fetch(`https://www.omdbapi.com/?apikey=1d60c136&s=${search}`)
             .then((res) => res.json())
             .then(data => {
                 if (data.Search) {
